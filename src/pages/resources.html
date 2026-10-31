@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NOVA | Community Resources</title>
+
+  <link rel="stylesheet" href="../output.css">
+
+  <!-- Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- Our API JavaScript file -->
+  <script src="../js/api.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-gray-50 text-gray-900">
+
+  <header class="bg-gray-950 px-6 py-5 text-white">
+    <div class="mx-auto flex max-w-6xl items-center justify-between">
+
+      <a href="../../index.html" class="text-2xl font-bold">
+        NOVA
+      </a>
+
+      <a href="../../index.html"
+         class="rounded-lg border border-gray-600 px-4 py-2 hover:bg-gray-800">
+        Back to Home
+      </a>
+
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-5 py-12">
+
+    <section class="mb-10 text-center">
+
+      <p class="font-semibold uppercase tracking-widest text-purple-700">
+        NOVA Discover
+      </p>
+
+      <h1 class="mt-3 text-3xl font-bold sm:text-4xl">
+        Community Resources
+      </h1>
+
+      <p class="mx-auto mt-4 max-w-2xl text-gray-600">
+        Explore useful information and community posts
+        retrieved dynamically from a public API.
+      </p>
+
+    </section>
+
+    <!-- Loading State -->
+    <div id="loadingMessage"
+         class="py-10 text-center text-lg font-medium text-purple-700">
+      Loading resources...
+    </div>
+
+    <!-- Error State -->
+    <div id="errorMessage"
+         class="hidden rounded-lg bg-red-100 p-5 text-center text-red-700">
+    </div>
+
+    <!-- API Data Cards -->
+    <section id="resourcesContainer"
+             class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    </section>
+
+    <p class="mt-10 text-center text-sm text-gray-500">
+      Data provided by JSONPlaceholder API.
+    </p>
+
+  </main>
+
+  <footer class="bg-gray-950 px-5 py-6 text-center text-sm text-gray-300">
+    © 2026 NOVA. All rights reserved.
+  </footer>
+
+</body>
+</html>
